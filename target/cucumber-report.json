@@ -1,0 +1,190 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify that a registered user can log in",
+        "description": "",
+        "id": "login;verify-that-a-registered-user-can-log-in",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5449848722,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the landing page of \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginSteps.i_am_on_the_landing_page_of(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2029003899,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on \"Sign in\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sign in",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.i_click_on_tab(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 260891613,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter \"Username\" and \"Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 9
+                },
+                {
+                  "val": "Password",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginSteps.i_enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1778360218,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on signIn button",
+            "match": {
+              "location": "LoginSteps.i_click_on_signIn_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132531,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am logged in and a banner \"sale 70% of all products\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sale 70% of all products",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginSteps.i_am_logged_in_and_a_banner_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "1LogIn.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify that I can add an item to Basket",
+        "description": "",
+        "id": "add-to-basket;verify-that-i-can-add-an-item-to-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1917650297,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on T-Shirts",
+            "match": {
+              "location": "AddToBasketSteps.i_click_on_T_Shirts()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5597463334,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Add to cart",
+            "match": {
+              "location": "AddToBasketSteps.i_click_on_Add_to_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1899711037,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on Proceed to check out",
+            "match": {
+              "location": "AddToBasketSteps.i_click_on_Proceed_to_check_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 295455395,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the item is added to cart",
+            "match": {
+              "location": "AddToBasketSteps.the_item_is_added_to_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Add to basket",
+    "description": "",
+    "id": "add-to-basket",
+    "keyword": "Feature",
+    "uri": "AddToBasket.feature"
+  }
+]
