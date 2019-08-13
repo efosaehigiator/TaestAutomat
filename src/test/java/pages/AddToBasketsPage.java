@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import util.DriverUtil;
 
+import java.sql.Driver;
+
 public class AddToBasketsPage extends DriverUtil {
     By TShirtButton = By.xpath("/html/body/div/div[1]/header/div[3]/div/div/div[6]/ul/li[3]/a");
     By ImageClick = By.xpath("//img[contains(@title,'Faded Short Sleeve T-shirts')]");
@@ -47,11 +49,12 @@ public class AddToBasketsPage extends DriverUtil {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).build().perform();
 
-        String item = "Faded Short sleeve T-Shirt";
-        if(driver.findElement(ItemIdentifyier).getText().contains(item))
-        {System.out.println("Right Item");}
-        else {
-            System.out.println("Wrong Item");
+        boolean status = driver.findElement(ItemIdentifyier).isDisplayed();
+        if(status){
+            System.out.println("Correct item in Basket");
+        } else {
+            System.out.println("wrong item in Basket");
         }
+
     }
 }
